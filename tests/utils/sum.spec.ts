@@ -1,6 +1,8 @@
 import exp from 'constants'
-import {sum } from '../src/common/sum'
+import {sum } from '../../src/common/sum'
 describe("Test function sum", () => {
+
+afterEach(() => jest.clearAllMocks());
 
 it("Sum Two numbers to be 2", () => {
     const sumTwoNumbers = sum(1,1)
@@ -15,6 +17,7 @@ sum(1,1)
 expect(consoleSpy).not.toHaveBeenCalledTimes(1)
 
 })
+
 
 
 })
